@@ -646,6 +646,7 @@
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
 		ui = new(user, src, "MiaCraft", "Crafting Menu", 700, 800)
+		ui.set_autoupdate(FALSE)
 		ui.set_state(GLOB.not_incapacitated_turf_state)
 		ui.open()
 
